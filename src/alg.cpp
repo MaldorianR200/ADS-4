@@ -18,14 +18,14 @@ int cbinsearch(int* arr, int size, int value) {
     if (arr[mid] == value) {
       ++count;
       int index = mid - 1;
-      while (index >= first && arr[i] == value) {
+      while (index >= first && arr[index] == value) {
         ++count;
-        --i;
+        --index;
       }
       index = mid + 1;
-      while (i <= last && arr[i] == value) {
+      while (index <= last && arr[index] == value) {
         ++count;
-        --i;
+        --index;
       }
       return count;
     } else if (arr[mid] < value) {
