@@ -8,7 +8,7 @@ int sizeEdge (int* arr, int size, int value) {
   }
   return 0;
 }
-int cbinsearch(int* arr, int size, int value) {
+int cbinsearch (int* arr, int size, int value) {
   int count = 0;
   int first = 0;
   int last = size - 1;
@@ -36,7 +36,7 @@ int cbinsearch(int* arr, int size, int value) {
   }
   return 0;
 }
-int countPairs1(int *arr, int len, int value) {
+int countPairs1 (int *arr, int len, int value) {
   int count = 0;
   for (int i = 0; i < len; ++i) {
     for (int j = i + 1; j < len; ++j) {
@@ -47,7 +47,7 @@ int countPairs1(int *arr, int len, int value) {
   }
   return count;
 }
-int countPairs2(int *arr, int len, int value) {
+int countPairs2 (int *arr, int len, int value) {
   int count = 0;
   len = sizeEdge(arr, len, value);
   for (int i = 0; i < len; ++i) {
@@ -57,7 +57,7 @@ int countPairs2(int *arr, int len, int value) {
   }
   return count;
 }
-int countPairs3(int *arr, int len, int value) {
+int countPairs3 (int *arr, int len, int value) {
   int count = 0;
   for (int i = 0; i < len; ++i) {
     int n = value - arr[i];
